@@ -43,7 +43,10 @@
             ajax('/sign_in','POST',JSON.stringify(data)).then((res)=>{
                 window.location.href = 'index.html'
             },(err)=>{
-                console.log(err)
+                let isAgree = confirm('您还未注册，请先注册')
+                if(isAgree){
+                    window.open('register.html')
+                }
             })
         })
     </script>
