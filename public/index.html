@@ -9,8 +9,10 @@
 <body>
     {{userName}}{{loginStatus}}
     <script>
-        let btn = document.querySelector('button');
-        btn.onclick = ()=>{
+        signIn.onclick = ()=>{
+            window.open('sign_in.html')
+        }
+        register.onclick = ()=>{
             window.open('register.html')
         }
     </script>

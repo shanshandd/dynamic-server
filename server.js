@@ -57,7 +57,7 @@ let server = http.createServer(function (req, res) {
              .replace('{{userName}}',user.userName);
             
         }else{
-            string = string.replace('{{loginStatus}}','未登录<button>登录</button>')
+            string = string.replace('{{loginStatus}}','未登录<button id="signIn">登录</button><button id="register">注册</button>')
              .replace( '{{userName}}' , '' );
         }
         res.write(string)
